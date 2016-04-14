@@ -1,2 +1,2 @@
 # Lean
-A simple offline weight tracking app with no restrictions on weight entries or online connection requirement unlike major apps in the market.
+A simple offline weight tracking app with no restrictions on weight entries or online connection requirement unlike major apps on the market.
