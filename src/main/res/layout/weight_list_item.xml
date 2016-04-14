@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_weight_info">
+
+    <TextView
+        android:id="@+id/item_weight"
+        android:text="itemName"
+        android:textSize="24sp"
+        android:ellipsize="end"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_below="@id/item_weight"
+        android:text="datetime"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
