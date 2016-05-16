@@ -9,7 +9,7 @@ public class Weight {
     private String datetime;
 
     public Weight(String weight, String datetime) {
-        this.weight = weight;
+        this.weight = weight + " lb";
         this.datetime = datetime;
     }
 

@@ -4,11 +4,9 @@ import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.InputType;
@@ -142,11 +140,17 @@ public class MainActivity extends ActionBarActivity {
         _weights.add(new Weight(value, curTime));
         _adapter.notifyDataSetChanged();
 
-        Toast.makeText(getApplicationContext(), "Successfully added: " + value, Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Successfully added: " + value + "lb", Toast.LENGTH_LONG).show();
     }
 
     private void actionBarChanger() {
         ActionBar actionBar = getActionBar();
+
+        // Hides the Android icon in the top left in the actionbar.
+        //actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
+        //actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setDisplayUseLogoEnabled(false);
 
         Drawable marker = getResources().getDrawable(R.color.green500);
         actionBar.setBackgroundDrawable(marker);

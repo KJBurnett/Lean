@@ -1,8 +1,5 @@
 package com.burntech.kyler.lean;
 
-import android.content.Context;
-import android.view.inputmethod.InputMethodManager;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -12,7 +9,7 @@ import java.util.Calendar;
 public class Util {
 
     public static String getCurrentTime(){
-        String format = "MM/dd/yyyy HH:MM:ss";
+        String format = "MM/dd/yyyy hh:mm a";
         SimpleDateFormat df = new SimpleDateFormat(format);
 
         Calendar c = Calendar.getInstance();
